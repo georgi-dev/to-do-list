@@ -1,0 +1,21 @@
+
+{% extends "index.html" %}
+
+{% block content %}
+<div class="add-form">
+    <h1>Add todo</h1>
+    <form method="POST" action="./save-todo.php">
+        <div>
+            <label>Title</label>
+            <input name="title" type="text" />
+        </div>
+        <div>
+            <label>Description</label>
+            <textarea name="description"></textarea>
+
+        </div>
+
+        <input type="submit" value="Save"/>
+    </form>
+</div>
+{% endblock%}

@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+{% block content %}
+{% include 'modal.html' %}
+{% include 'confirm-modal.html' %}
+<h1 class="mt-4">All todos</h1>
+<div class="todos-wrapper">
+   <table class="all-todos-table">
+      <thead>
+         <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Created at</th>
+            <th>Actions</th>
+         </tr>
+      </thead>
+      <tbody>
+      </tbody>
+   </table>
+   <div class="pagination"></div>
+</div>
+<script src="../assets/js/Todos.js"></script>
+<script>
+   (function() {
+       Todos.get({page:1});
+   })();
+   
+</script>
+{% endblock %}

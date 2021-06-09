@@ -1,0 +1,192 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mt-4{
+    margin-top: 3rem;
+}
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+.text-red{
+    color:red;
+}
+.text-blue{
+    color:blue;
+}
+
+body{
+    font-size: 16px;
+}
+header{
+    background: #000;
+    color:#fff;
+}
+h1{
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li {
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor:pointer;
+    font-size: 1.5rem;
+}
+/* ALL TODOS */
+.todos-wrapper {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.all-todos-table {
+    margin: 2rem auto;
+}
+.all-todos-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .all-todos-table td, .all-todos-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .all-todos-table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .all-todos-table tr:hover {background-color: #ddd;}
+  
+  .all-todos-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  .action-btn {
+      padding: .5rem 1rem;
+      cursor:pointer;
+      color:#fff;
+      outline: none;
+      border:none;
+      font-weight: bold;
+  }
+  .edit-todo {
+    background: #007bff;
+  }
+  .remove-todo {
+    background: #bd2130;
+  }
+/* ADD TODO */
+.add-form, .edit-form {
+    margin:2rem auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 300px;
+}
+
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit], input[type=button] {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover, input[type=button]:hover {
+    background-color: #45a049;
+  }
+  
+  /* MODAL */
+
+  .modal {
+    
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-header, .modal-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 350px; 
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /* PAGINATION */
+
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  .pagination a.active-link {
+    color: #fff;
+    
+    background: #00adff;
+}
