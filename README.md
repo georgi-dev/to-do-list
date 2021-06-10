@@ -5,5 +5,5 @@ Instalition on local machine:
 
 Using XAMPP - 
 create virtual host,
-named project "todo",
+create project - "todo",
 import .sql to your database
